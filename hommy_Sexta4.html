@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hommy</title>
+    <style>
+		
+		body{
+			background:#ccc;
+		    font-family: 'Courier New';
+            background-image: url(https://cutewallpaper.org/21/google-homepage-wallpaper/homepage-background-90-best-free-man-outdoor-wallpaper-.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      		}
+		
+		.geral{
+			width:100%;
+			height:100%;
+			margin:0 auto;
+			padding:0 auto;
+		}
+		
+		.topo{
+			width:100%;
+			height:auto;
+			display:block;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 100px; 
+			width: 200px;
+			float:left;
+        }
+		
+        h1 {
+			width: 100%;
+			height: 30px;
+			background-color: rgba(243,199,212,0.7);
+			font-size: 25px;
+			position: relative;
+			margin: 60px 0;
+			float: left;
+			padding: 15px 0;
+        }
+        h3 {
+            text-align:center ;
+            background-color: rgba(255,255,255,0.8);
+			width:300px;
+			height:30px;
+			display:block;
+			margin:20px auto;
+        }
+        .article {
+            line-height: 28px;
+			margin-top: 50px;  
+            text-align: center; 
+			height: 20px;
+			width: 100%;
+        }
+        .section {
+            text-align: left; height: 20px; width: 5px;
+
+        }
+
+        .aside {
+            text-align: right;  height: 20px; width: 5px;
+        }
+        .btn {
+            padding: .5rem 1rem;
+            background-color: lavender;
+            color: rgb(27, 16, 16);
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        
+        }
+        .btn:hover {
+            color: white;
+            background-color: teal;
+        }
+        .text-input {
+            padding: .7rem 1rem; display: block; width: 300px;
+            border-radius: 5px; border: 1px solid cornsilk;
+            outline: none; color: darkcyan; color: rgb(241, 151, 241);
+            line-height: 1.5rem; font-size: 1.2rem;
+            line-height: 20px;
+        }
+        .nav {
+            text-align: center;
+			float:right:
+			width:1000px;
+			height:40px;
+			background-color: rgba(243,199,212,0.7);
+       }
+		
+		.navform{
+			float:right;
+			padding:10px 20px;
+			width:400px;
+		}
+        
+		
+		.imagebox{
+			width:90%;
+			margin:20px auto;
+			text-align:center;
+			display:inline;
+		}
+		.imagebox img{
+			margin:30px auto;
+		    padding: 20px 20px;
+			display:inline;
+		}
+		
+		
+        .footer {
+			width:100%;
+            background-color: rgb(2, 22, 51);
+            color: rgb(240, 194, 194);
+            height: auto;
+			padding:30px 0;
+        }
+        .footer .footer-content {
+            border: 1px solid rgb(243, 191, 243);
+            display: flex;
+            font-family: 'Lucida Sans';
+            margin-bottom: 0px;
+            
+        }
+        .footer .footer-content .footer-section{
+            flex: 1;
+            padding: 2px;
+            border: 1px solid rgb(243, 191, 243);
+        }
+        .footer .footer-content .footer-contact .form{
+            height: 2px;
+            width: 50px;
+        }
+        .footer .footer-content .about {
+            display: block; font-size: 1.em;
+            margin-bottom: 2px;
+            text-align: left;
+        }
+        .footer .footer-content .about .socials a {
+            border: 1px solid white; width:  45px;
+            height: 30px;
+            margin-right: 5px; text-align: center; margin-bottom: 5px;
+            display: inline-block; font-size: 1.3em;
+            border-radius: 5px;
+            transition: all .3s;
+        }
+        .footer .footer-content .links ul a {
+            display: block; margin-bottom:  10px;
+            font-size: 1.2em;
+            color: rgb(243, 191, 243);
+            line-height: 21px;
+            font-family: 'Lucida Sans';
+            transition: all .3s;
+        }
+        .footer .footer-content .links ul a:hover {
+            color: white; margin-left: 15px;
+            transition: all .3s;
+        }
+        .footer .footer-content .about .socials a:hover {
+            border: white 1px solid;
+            color: white;
+            transition: all .3s;
+        }
+        .footer .footer-content .contact {
+            text-align: center;
+        }
+        .footer .footer-content .contact-form .contact-input {
+            background-color: rgb(243, 191, 243);
+            color: #574f4f;
+            margin-bottom: 10px; line-height: 1.5rem;
+            padding: .7rem 1.2rem; border: none;
+            text-align: right;
+        }
+        .footer .footer-content .contact-form .contact-input:focus {
+            background-color:  rgb(243, 191, 243);
+            text-align: center;
+
+        }
+        .footer .footer-content .footer-section .footer-section .about .us {
+            text-align: right;
+        }
+        .footer .footer-bottom {
+    background-color: rgb(3, 1, 15);
+    color: rgb(245, 209, 228);
+    height: auto;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 20px;
+}
+            
+        }
+		
+		
+/*# Social Buttons */
+		
+.footer .social {
+	width:100%;
+	display:block;
+	text-align:center;
+    margin-top: 40px;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fa {
+  padding: 14px 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 1;
+	background: #ce668c;
+	color:#ce668c;
+}
+
+.fa-facebook {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-twitter {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-google {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-youtube {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #ce668c;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-android {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-vine {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-flickr {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ce668c;
+  color: white;
+}
+
+.fa-rss {
+  background: #ce668c;
+  color: white;
+}
+		
+		
+		
+        
+
+    </style>
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	
+	
+	
+</head> 
+<body>
+	
+	<div id="geral">
+		
+	<div class="topo">
+    
+    <div class="nav">
+		<div class="logo"><img src="C:\Users\Filipe\Documents\hommy-removebg-preview.png" alt="logo"></div>
+
+		<div class="navform">
+        <form>
+            Pesquisa:<input type="text">
+        </form>
+		</div>
+    </div>
+	</div>
+		
+        <div class="article">
+
+<h1>Encontre uma República dos sonhos ou exponha a sua para outros!</h1>
+			
+<h3>Fácil e rápido.<button>Instalar o app</button></h3>
+			
+
+		<div class="imagebox">
+			
+           <img src="C:\Users\Filipe\Downloads\postit1-removebg-preview (2).png" alt="postit1">
+ 
+
+            <img src="C:\Users\Filipe\Downloads\postit1-removebg-preview (1).png" alt="postit2">
+        
+       
+            <img src="C:\Users\Filipe\Pictures\print1.jpg" alt="print1">
+
+            <img src="C:\Users\Filipe\Pictures\print2.jpg" alt="print2">
+
+            <img src="C:\Users\Filipe\Pictures\print3.jpg" alt="print3">
+        
+		</div>
+			
+			
+        <div class="footer">
+            <div class="footer-content">
+
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>HOMMY</span></h1>
+                    <P>
+                        HOMMY conforta, HOMMY facilita, HOMMY ajuda a te ajudar
+                    </P>
+                    <div class="us">
+                        <span><i class="fas fa-phone"></i>&nbsp; 123-456-789</span>
+                        <span><i class="fas fa-envelope"></i>&nbsp; hommy123@gmail.coL</span>
+
+                    </div>
+                    
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <a href="#"><li>Novidades</li></a>
+                        <a href="#"><li>Galeria</li></a>
+                        <a href="#"><li>Fundadores</li></a>
+                        <a href="#"><li>Termos e Condições</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h2>Dúvidas? Entre em contato!</h2>
+                    <br>
+                    <form action="index.html" method="postar">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Seu e-mail...">
+                        <textarea name="mensagem" class="text-input contact-input" placeholder="Sua mensagem..."></textarea>
+                    </form>
+                    <button type="submit" class="btn btn-big">
+                        <i class="fas fa-envelope"></i>
+                        Enviar
+                    </button>
+                </div> 
+            </div>
+        
+            <div class="footer-bottom">
+                &copy; EJCM | Design de Helena C. Nicolli
+				
+				<div class="social">
+			<a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+		     </div>	
+				
+            </div>
+			
+		
+			
+			
+        </div>
+        
+    </div>
+   
+        
+	</div>
+
+</body>
+</html>
